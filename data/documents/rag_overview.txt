@@ -1,0 +1,19 @@
+Retrieval-Augmented Generation: A Short Overview
+
+Retrieval-augmented generation, usually abbreviated RAG, is a technique that combines a document retrieval step with a text generation step. Instead of asking a language model to answer from memory alone, a RAG system first searches a collection of documents for passages that are relevant to the question and then asks the model to write an answer using only those passages.
+
+Document Preparation
+
+Before documents can be searched they must be prepared. Text is extracted from files such as PDF, DOCX and plain text, cleaned to remove noise, and split into chunks of a few hundred words. Chunks overlap slightly so that a sentence near a boundary is not separated from its context. Each chunk keeps metadata such as the document name, page number and a unique chunk identifier.
+
+Embeddings and Vector Search
+
+Each chunk is converted into an embedding, which is a dense numerical vector produced by a transformer encoder. Texts with similar meaning are mapped to nearby vectors. When a user asks a question, the question is embedded with the same model and compared against all chunk embeddings using cosine similarity. The chunks with the highest similarity scores are returned as the top-k results. A library such as FAISS makes this nearest neighbour search fast.
+
+Grounded Answers
+
+The retrieved chunks are placed in a prompt together with the question. The prompt instructs the language model to answer only from the supplied context, to cite the passages it used and to say clearly when the context does not contain enough information. This design reduces hallucination because every statement in the answer can be traced back to a source passage.
+
+Evaluation
+
+A RAG system should be evaluated in two parts. Retrieval quality is measured with metrics such as recall at k and precision at k, which check whether the relevant chunks appear among the top results. Generation quality is measured by checking whether the answer is relevant to the question and whether its statements are supported by the retrieved context.

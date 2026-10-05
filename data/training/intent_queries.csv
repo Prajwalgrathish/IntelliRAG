@@ -1,0 +1,61 @@
+text,label
+"What is retrieval-augmented generation?",definition
+"Define the term vector embedding.",definition
+"What does the abbreviation FAISS stand for?",definition
+"What is meant by chunk overlap?",definition
+"Can you explain what semantic search is?",definition
+"What does cosine similarity mean?",definition
+"Give me the definition of groundedness.",definition
+"What is a transformer encoder?",definition
+"What is the meaning of the word latency in this report?",definition
+"Define key performance indicator as used in the document.",definition
+"What does the glossary say about onboarding?",definition
+"What is an inverted index?",definition
+"Who is the author of the report?",factual
+"When was the policy introduced?",factual
+"How many employees does the company have?",factual
+"What was the total revenue in 2023?",factual
+"Where is the headquarters located?",factual
+"Which department is responsible for compliance?",factual
+"What is the deadline for submitting the application?",factual
+"How much does the premium plan cost?",factual
+"Which version of the software was released first?",factual
+"What date was the contract signed?",factual
+"Who approved the budget?",factual
+"What is the maximum file size allowed?",factual
+"Summarize the main points of the document.",summary
+"Give me an overview of the report.",summary
+"What is the main topic discussed in the document?",summary
+"Provide a brief summary of chapter two.",summary
+"Can you summarize the key findings?",summary
+"What are the highlights of this paper?",summary
+"Give a short recap of the meeting notes.",summary
+"Summarize the conclusions of the study.",summary
+"Outline the main arguments made by the author.",summary
+"What is this document about?",summary
+"Briefly describe the content of the introduction.",summary
+"Tell me the key takeaways from the presentation.",summary
+"How does the first approach differ from the second?",comparison
+"Compare the two pricing plans.",comparison
+"What are the differences between the old and new policy?",comparison
+"Which option is better, A or B?",comparison
+"Compare revenue in 2022 with revenue in 2023.",comparison
+"How do the findings of study one compare with study two?",comparison
+"What are the similarities and differences between the two models?",comparison
+"Is the standard plan cheaper than the premium plan?",comparison
+"Contrast the advantages of cloud hosting with on-premise hosting.",comparison
+"How does version two improve on version one?",comparison
+"What distinguishes supervised from unsupervised methods in the text?",comparison
+"Compare the strengths of the two proposals.",comparison
+"How do I reset my password?",procedural
+"What are the steps to install the software?",procedural
+"Explain how to submit an expense claim.",procedural
+"How can I configure the application for production?",procedural
+"What is the process for requesting leave?",procedural
+"Walk me through the onboarding procedure.",procedural
+"How do I apply for a refund?",procedural
+"What steps should be followed to renew the license?",procedural
+"How is the backup performed?",procedural
+"Describe how to set up the environment.",procedural
+"How do I file a support ticket?",procedural
+"What is the procedure for reporting an incident?",procedural

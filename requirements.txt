@@ -1,0 +1,20 @@
+# Core API
+fastapi>=0.110,<1.0
+uvicorn[standard]>=0.27
+pydantic>=2.6,<3.0
+pydantic-settings>=2.2
+python-multipart>=0.0.9
+httpx>=0.27
+
+# ML / NLP
+# Tip (CPU only): pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.2
+transformers>=4.40
+faiss-cpu>=1.8
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.4
+
+# Document loaders
+pypdf>=4.0
+python-docx>=1.1
